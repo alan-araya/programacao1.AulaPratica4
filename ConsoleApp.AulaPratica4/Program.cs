@@ -12,12 +12,28 @@ namespace ConsoleApp.AulaPratica4
             Console.WriteLine("Aula Prática de C# 4!");
             Console.WriteLine("---------------------------------------");
 
+
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("Threads");
+            Console.WriteLine("---------------------------------------");
+
+            ThreadPing exercicio1 = new ThreadPing();
+            //exercicio1.StartPing();
+
+
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("Tasks Await, Chain, WhenAll");
+            Console.WriteLine("---------------------------------------");
+
+            PessoaFinder pessoaFinder = new PessoaFinder();
+            await pessoaFinder.ExercicioPessoaAsync();
+
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Tasks e Async/Await com IO Bound");
             Console.WriteLine("---------------------------------------");
 
             PraticaIOAsync praticaIOAsync = new PraticaIOAsync();
-            await praticaIOAsync.Exercicio2Async();
+            //await praticaIOAsync.Exercicio2Async();
         }
 
        
